@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>    
+</head>
+<body>
+
+    <div class="containerIndex">
+        <form class="formulario p-4 border rounded-3 bg-light border border-success-subtle p-5" style="width: 830px;" >
+            <h4 class="tituloFirma text-center mb-4">Generador de firmas automáticas</h4>
+            
+            <div class="mb-3">
+                <label for="inputName" class="form-label fw-bold">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre de la firma">
+            </div>
+        
+            <div class="mb-3">
+                <label for="inputCargo" class="form-label fw-bold">Cargo</label>
+                <input type="text" class="form-control" id="inputCargo" placeholder="Cargo en la empresa">
+            </div>
+        
+            <div class="mb-3">
+                <label for="inputCorreo" class="form-label fw-bold">Correo</label>
+                <input type="email" class="form-control" id="inputCorreo" placeholder="Correo de empresa">
+            </div>
+        
+            <div class="mb-3">
+                <label for="inputExtension" class="form-label fw-bold">Extensión</label>
+                <input type="text" class="form-control" id="inputExtension" placeholder="EXT">
+            </div>
+        
+            <div class="mb-3">
+                <label for="inputCelular" class="form-label fw-bold">Número Celular</label>
+                <input type="tel" class="form-control" id="inputCelular" placeholder="Celular">
+            </div>
+        
+            <div class="text-center">
+                <button type="button" class="btn btn-primary px-4 py-2" onclick="createImg()">Generar Firma</button>
+            </div>
+        </form>
+        
+        <div class="preFirma" id="generarFirma" style="background-color: white; margin-top: 600px;">
+            <img src="./imgs/logo.jpg" alt="">
+            <!-- <img src="https://edexa1-my.sharepoint.com/:i:/g/personal/apenagos_edexa_com_co/Ebi5wEkju2xBjJWg7ir6RagBvkLYQqfDssKESnPIVAPc5A?e=Z8QT8P" alt=""> -->
+            <div class="contenidoFirma">
+                <p class="verde" style="margin-bottom: 20px;" id="cordial"><strong>Cordialmente,</strong></p>
+                <br>
+                <div class="pFlex">
+                    <p class="verde" id="nombreImg"><strong></strong></p>
+                    <p>|</p>
+                    <p class="gris" id="cargoImg" ><strong></strong></p>
+                </div>
+                <div class="pFlex">
+                    <p class="gris" id="correoImg"></p>    
+                </div>
+                <div class="pFlex">
+                    <p class="verde"><strong>PBX:</strong></p>
+                    <p class="gris" >747 02 60</p>
+                    <p class="verde"style="margin-left: 5px;" id="ext"><strong>EXT:</strong></p>
+                    <p class="gris" id="extImg" ></p>    
+                </div>
+                <div class="pFlex">
+                    <p class="verde" id="idCel"><strong>Cel:</strong></p>
+                    <p class="gris" id="celImg"></p>
+                </div>
+                <div class="pFlex">
+                    <p class="gris">Km 1.3 Vía Parcelas de cota</p>
+                </div>
+                <div class="pFlex">
+                    <p class="gris">Conjunto AEPI Bodega 11</p>
+                </div>
+                <p class="verde">www.edexa.com.co</p>
+                <div class="logos">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+            <div class="nota">
+                <hr>
+                <p>Nota:
+                    La información transmitida está destinada al uso exclusivo de las personas a quienes esté dirigida y puede contener información confidencial. Toda revisión, retransmisión, diseminación u otro uso de esta información por personas o entidades distintas del destinatario está prohibida. Si usted ha recibido esta comunicación por error por favor haga caso omiso de su contenido y notifíquenos de inmediato.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="js/index.js"></script>
+    
+</body>
+</html>

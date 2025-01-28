@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+}
+.containerIndex{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    width: 500v;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    position: absolute;
+    z-index: 2;
+    margin-top: 650px;
+    border-radius: 10%;
+    background-color: #E6E6FA;
+    width: 800px;
+    padding: 60px;
+}
+#textLabel{
+    margin-top: 20px;
+}
+.tituloFirma{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.preFirma{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: auto;
+    position: fixed;
+    margin: 20px;
+}
+.preFirma img{
+    position: fixed;
+    margin-top: 50px;
+}
+.contenidoFirma{
+    /* position: fixed; */
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.nota{
+    /* margin-top: 300px; */
+    font-size: 12px;
+    width: 800px;
+    margin-left: 20px;
+}
+.pFlex{
+    margin-top: 5px;
+}
+.pFlex p {
+    display: inline;
+}
+p{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.verde{
+    color: #006400;
+}
+.gris{
+    color: #696969;
+}
+.logos{
+    margin-top: 10px;
+    font-size: 25px;
+}
+#cordial{
+    font-size: 22px;
+}
+#nombreImg{
+    font-size: 22px;
+}
+#cargoImg{
+    font-size: 22px;
+}
