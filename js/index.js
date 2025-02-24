@@ -8,7 +8,7 @@ function createImg(){
     const select = document.getElementById("dir");
     const valorSeleccionado = select.value;
 
-    if(nombre==''||cargo==''||correo==''||celular==''||valorSeleccionado=='select'){
+    if(nombre==''||cargo==''||correo==''||valorSeleccionado=='select'){
         // window.error('Faltan campos por llenar')
         alert("Faltan campos por llenar");
         console.log(valorSeleccionado)
