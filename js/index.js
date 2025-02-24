@@ -42,7 +42,7 @@ function createImg(){
 
         const contenido = document.getElementById('generarFirma');
 
-         Usar el método sin promesas (usando callback en lugar de .then())
+         //Usar el método sin promesas (usando callback en lugar de .then())
          html2canvas(contenido, {
              onrendered: function (canvas) {
                  const imgData = canvas.toDataURL('image/png');
