@@ -40,7 +40,27 @@
                 <label for="inputCelular" class="form-label fw-bold">Número Celular</label>
                 <input type="tel" class="form-control" id="inputCelular" placeholder="Celular">
             </div>
-        
+
+            <div class="mb-3">
+                <label for="inputCelular" class="form-label fw-bold">______________________________________________________________________________________________________________</label>
+                <!-- <input type="tel" class="form-control" id="inputCelular" placeholder="Celular"> -->
+                <div class="col-md">
+                    <div class="form-floating">
+                      <select class="form-select" id="dir" required>
+                        <option selected value="select">Seleccione Dirección</option>
+                        <option value="med">Medellin</option>
+                        <option value="bog">Bogotá</option>
+                      </select>
+                      <label for="floatingSelectGrid">Dirección Edexa</label>
+                    </div>
+                </div>
+                 <!-- <select name="" id="dir">
+                    <option value="med">Medellin</option>
+                    <option value="bog">Bogotá</option>
+                 </select> -->
+            </div>
+            
+
             <div class="text-center">
                 <button type="button" class="btn btn-primary px-4 py-2" onclick="createImg()">Generar Firma</button>
             </div>
@@ -71,10 +91,10 @@
                     <p class="gris" id="celImg"></p>
                 </div>
                 <div class="pFlex">
-                    <p class="gris">Km 1.3 Vía Parcelas de cota</p>
+                    <p class="gris" id="dir1">Km 1.3 Vía Parcelas de cota</p>
                 </div>
                 <div class="pFlex">
-                    <p class="gris">Conjunto AEPI Bodega 11</p>
+                    <p class="gris" id="dir2">Conjunto AEPI Bodega 11</p>
                 </div>
                 <p class="verde">www.edexa.com.co</p>
                 <div class="logos">
